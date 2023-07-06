@@ -1,0 +1,337 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #88abff;
+    zoom: 2.5;
+    width: 100%;
+    height: 100%;
+}
+
+.app {
+    margin-left: 170px;
+}
+
+
+.container {
+    display: flex; 
+    margin: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+ .box {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+} 
+
+
+.add-note{
+    font-size: 1.5em;
+    display: flex;
+    background-color: transparent;
+    border: 1px dashed #88abff;
+    color: #88abff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;    
+ }
+
+ .text{
+    color: #88abff;
+    font-size: 0.5em;
+    font-weight: bold;
+ }
+
+ .flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    
+ }
+
+.extra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    font-size: 14px;
+    padding: 7px 12px;
+}
+
+
+
+.note {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .description {
+    flex: 1;
+    font-size: 10px;
+    padding: 0 6px 0 12px;
+    color: #4e4d4d;
+  }
+  
+  .row-footer {
+    font-size: 8px;
+    color: #4e4d4d;
+    margin: 4px 6px;
+    padding: 4px 0;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+  }
+
+
+  .fa-exclamation {
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+
+    .exclamIcon-box{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 200;
+    }    
+
+  .yellow-background{
+    background-color: #f8f8a8;
+  }
+
+  .red {
+    color: red;
+  }
+
+  .display {
+    display: block;
+  }
+
+  .fa-ellipsis{
+    cursor: pointer;
+  }
+
+   i .more .fa-solid .fa-ellipsis{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+
+
+    .menu{
+        display: none;
+        position: absolute;
+        right: -30px;
+        top: 15px;
+        background-color: white;
+    }
+
+    .menu li{
+        list-style: none; 
+        padding: 5px;
+    }
+
+    .fa-edit, .fa-trash{
+        padding: 0px 0px 0px 5px;
+    }
+
+.edit:hover,
+.trash:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+/* Scrollbar styling */
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent; 
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 5px;   
+    }
+  
+    .header{
+        overflow: hidden;
+        height: 35.2px;
+    }
+
+    .header:hover {
+        overflow: auto;
+    }
+
+    .description {
+        height: 86px;
+        overflow: hidden;
+    }
+
+    .description:hover {
+        overflow: auto;
+        
+    }
+
+
+ /* /now I want within the note to hide the verticall scroll bar since user can move vertically by scroll so this is why it is not necessary */
+
+
+
+
+/* Rest of the CSS code... */
+
+
+
+
+/* ///////////////////////////POP UP ///////////////////////////////////// */
+  .pop-up{
+    
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    width: 100%;
+    background-color: white;
+    padding: 0 14px 14px 14px;
+    border-radius: 5px;
+    z-index: 100;
+   
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .row-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0 -14px;
+    border-bottom: 1px solid black;
+}
+
+
+   .row-header h3{
+        font-size: 10px;
+}
+
+
+.fa-times{
+    cursor: pointer;
+    color: #858585;
+}
+
+.label{
+    font-size: 8px;
+    margin: 5px 0px 3px 0px;
+    font-weight: bold;
+}
+
+.text-area{
+    margin-bottom: 10px;
+    outline: none;
+    padding: 2px 0 0 2px;
+    font-size: 8px;
+    resize: none;
+}
+
+.add-button{
+    background-color: #6a93f8;
+    color: white;
+    border: none;
+    font-size: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.title_input{
+    outline: none;
+    padding: 1px 0 0 1px; 
+    font-size: 8px;
+    height: 1.25rem;
+}
+
+
+.darker-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+/* ////this will be the switcher which we will change the display value  */
+.visible{
+    display: none;
+}
+
+
+.input-color{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    width: 25px;
+    height: 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+
+  
+
+
+/* ////////////////////////// POP UP END //////////////////////////////////////// */
+
+ @media screen and (max-width: 1200px){
+    .box,
+    .note{
+        width: 100%;
+    }
+    
+    .container{
+        margin: 10px
+    }
+ }
+
+
+ .test {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+ }

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .program-container {
+    display : flex;
+} */
+
+
+
+.left-column {
+    max-width: 150px;
+    width: 150px;
+    height: 100vh;
+    background-color: #88abff;
+    position: fixed;
+    top: 0;
+
+}
+
+
+.new-workspace {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 8px;
+    line-height: 4;
+    font-weight: 700;
+    padding : 0 15px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+    position: relative;
+
+}
+
+
+
+.workspace-container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    float: left;
+    flex-direction: column;
+    
+}
+
+.minus-icon-container {
+    display: flex; /* stosuejmy po to by ten container nie miał takiej dużej dziwnej wysokości */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.workspace-example {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 4;
+    font-size: 8px;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+

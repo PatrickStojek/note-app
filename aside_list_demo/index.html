@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aside_list_demo</title>
+    <script src="https://kit.fontawesome.com/e7517d8ab8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aside.css">
+</head>
+<body>
+    <div class="test" onclick="allNotes()">test</div>
+    <div class="program-container">
+        <aside class="left-column">
+                <div class="workspace-container">
+
+                    <input type="text" class="new-workspace " placeholder="add new Workspace">
+                </div>     
+        </aside>
+        <div class="app">
+            <div class="container">
+                <div class="darker-background visible">  
+                    <div class="pop-up">
+                            <div class="row-header">
+                                <h3 class="pop-up-header">Add new Note</h1>
+                                <i class="close fas fa-times"></i>
+                            </div>    
+                        <label class="label">Title</label>
+                            <input type="text" class="title_input">
+                            <label class="label">Description</label>
+                            <textarea  cols="30" rows="5" class="text-area"></textarea>
+                        <button class="add-button">Add Note</button> 
+                    </div>   
+                </div>
+                <div class="box first-note">
+                    <div class="flex-column">
+                        <button class="add-note"><i class="fas fa-plus"></i></button>
+                        <span class="text">Add new note</span>
+                    </div>
+                </div>
+                <input type="color" class="input-color">
+
+                
+          
+            </div>
+        </div>  
+    </div>
+    <script src="script.js"></script>
+    <script src="background.js"></script>
+    <script src="aside.js"></script>
+</body>
+</html>
+
+
+
+  <!--  <div class="box note">
+                    <h1 class="header">My last note</h1>
+                    <p class="description">This is short description of my lsat note.</p>
+                    <div class="row-footer">
+                        <span class="date">April 3, 2022</span>
+                        
+                        <i  class="more fa-solid fa-ellipsis"></i>
+                        <div class="menu">
+                            <ul>
+                                <div class="edit">
+                                    <li>Edit<i class="fas fa-edit"></i></li>
+                                </div>
+                                <div class="trash">
+                                    <li>Delete<i class="fas fa-trash"></i></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
